@@ -41,7 +41,7 @@ const Job = ({ job }: Props) => {
       {topInfo.featured && (
         <div className="bg-DesaturatedDarkCyan w-[2%] max-w-[10px] rounded-l-lg"></div>
       )}
-      <div className="w-full self-center rounded-md shadow-lg shadow-DesaturatedDarkCyan/30 flex space-y-4 lg:space-y-0 flex-col lg:flex-row lg:items-center lg:justify-between bg-primaryFilter px-3 py-5">
+      <div className="w-full  bg-white self-center rounded-md shadow-lg shadow-DesaturatedDarkCyan/30 flex space-y-4 lg:space-y-0 flex-col lg:flex-row lg:items-center lg:justify-between  px-3 py-5 lg:px-4 lg:py-10">
         <Top topInfo={topInfo} />
         <Bottom bottomInfo={bottomInfo} />
       </div>

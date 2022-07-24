@@ -41,7 +41,6 @@ export const FilterProvider = ({ children }: Props) => {
       const flat = newArr.flatMap((item) => item);
       return filter.every((r) => flat.includes(r));
     });
-    console.log(filted);
     setNewData(filted);
   }, [filter]);
   const updateFilter = (item: string) => {
