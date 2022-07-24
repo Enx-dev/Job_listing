@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Attribution from "./Components/Attribution";
+import Filter from "./Components/Filter";
+import Header from "./Components/Header";
+import Jobs from "./Components/Jobs";
+import { FilterProvider } from "./hooks/useFilter";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FilterProvider>
+      <section className="px-0 min-h-screen flex flex-col bg-primaryBackground">
+        <Header />
+        <Filter />
+        <Jobs />
+        <Attribution />
+      </section>
+    </FilterProvider>
   );
 }
 
